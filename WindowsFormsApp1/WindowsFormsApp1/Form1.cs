@@ -24,6 +24,24 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
+            string user = txtUserName.Text.Trim();
+            string pass = txtPassword.Text.Trim();
+
+            if (user == "admin" && pass == "admin")
+            {
+                // chuyển qua form đăng nhập thành công
+                SuccessForm f = new SuccessForm();
+                f.Show();
+                this.Hide();  // ẩn form hiện tại
+            }
+            else
+            {
+                MessageBox.Show("Sai tài khoản hoặc mật khẩu!");
+            }
+        }
+
+        private void txtMatKhau_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }
