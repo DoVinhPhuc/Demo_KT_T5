@@ -138,3 +138,6 @@ UpgradeLog*.htm
 *.msp
 *.msix
 *.cab
+*/.bin
+*/.obj
+*/.vs
